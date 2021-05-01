@@ -146,7 +146,7 @@ class _ListTile extends StatelessWidget {
             Text(
               'Chat',
               style: TextStyle(
-                fontSize: 12.0,
+                fontSize: 10.0,
                 height: 1.5,
                 color: Theme.of(context).primaryColor,
                 fontWeight: FontWeight.w500,

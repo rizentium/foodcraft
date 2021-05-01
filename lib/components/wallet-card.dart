@@ -121,11 +121,14 @@ class _CustomButtonWithLabel extends StatelessWidget {
         Text(
           this.label,
           style: TextStyle(
-            fontSize: 12.0,
+            fontSize: 10.0,
             height: 2.0,
             color: Colors.white,
             fontWeight: FontWeight.w500,
           ),
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          textAlign: TextAlign.center,
         ),
       ],
     );

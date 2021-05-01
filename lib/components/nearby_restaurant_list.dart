@@ -175,17 +175,15 @@ class _ListTile extends StatelessWidget {
           crossAxisAlignment: WrapCrossAlignment.center,
           children: [
             Text(
-              this.item.title,
+              "${this.item.title}  ",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              textWidthBasis: TextWidthBasis.longestLine,
             ),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 5.0),
-              margin: EdgeInsets.only(left: 10.0),
               width: 50.0,
               decoration: BoxDecoration(
                 color: Color(0xFFED6825),
@@ -249,7 +247,7 @@ class _ListTile extends StatelessWidget {
             Text(
               'Pesan',
               style: TextStyle(
-                fontSize: 12.0,
+                fontSize: 10.0,
                 height: 1.5,
                 color: Theme.of(context).primaryColor,
                 fontWeight: FontWeight.w500,

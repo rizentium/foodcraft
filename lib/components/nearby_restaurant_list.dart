@@ -171,17 +171,22 @@ class _ListTile extends StatelessWidget {
             ),
           ),
         ),
-        title: Row(
+        title: Wrap(
+          crossAxisAlignment: WrapCrossAlignment.center,
           children: [
             Text(
               this.item.title,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              textWidthBasis: TextWidthBasis.longestLine,
             ),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 5.0),
               margin: EdgeInsets.only(left: 10.0),
+              width: 50.0,
               decoration: BoxDecoration(
                 color: Color(0xFFED6825),
                 borderRadius: BorderRadius.circular(20.0),
@@ -190,6 +195,7 @@ class _ListTile extends StatelessWidget {
                 ],
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
                     this.item.stars,
